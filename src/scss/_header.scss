@@ -1,0 +1,43 @@
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+ .logo {
+   font-family: $logoFont;
+   display: inline-block;
+   color: $steakMarron;
+   font-size: 35px;
+ }
+ nav {
+   float: right;
+   a {
+      text-decoration: none; 
+      padding: 0 2px 4px;
+      margin: 0 8px;
+      color: darken($blanco, 30%);
+      font-weight: 400;
+      &:hover {
+        border-bottom: 2px solid $steakMarron;
+        color: lighten($blanco, 50%);
+        font-weight: 600;
+      }
+   }
+   .lang-select {
+     display: inline-block;
+     color: darken($blanco, 30%);
+     &:hover {
+      border-bottom: 2px solid $steakMarron;
+      color: lighten($blanco, 50%);
+      font-weight: 600;
+    }
+   }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    nav {
+      visibility: hidden;
+    };
+  }
+}

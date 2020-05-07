@@ -1,2 +1,0 @@
-# hyperRest
-Created with CodeSandbox

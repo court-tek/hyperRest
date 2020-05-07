@@ -1,0 +1,48 @@
+#SpecialMenu {
+  padding: 100px; 
+  .discover-title {
+    text-align: center;
+   }
+   .our-title {
+    text-align: center;
+    color: #fff;
+   }
+  .flex {
+    @include flexRow;
+    .menu-card {
+      color: #ffffff;
+      text-align: center;
+      border: 30px solid $hyperBackground;
+      .box {
+        background-color: $blanco;
+        padding: 20px;
+        color: $noir;
+        .price-circle {
+          background: $blanco;
+          border: 10px solid rgba(255, 255, 255, .7);
+          height: 100px;
+          width: 100px;
+        } 
+        .title {
+          font-weight: 600;
+          text-transform: capitalize;
+          font-size: 0.9rem;
+        }
+        .details {
+          font-weight: 300;
+          text-align: center;
+          font-size: 0.8;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #SpecialMenu {
+    .flex {
+      flex-direction: column;
+    }
+  }
+}

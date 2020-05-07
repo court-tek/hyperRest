@@ -1,0 +1,17 @@
+@import './variables';
+
+// flex-grid 
+@mixin flexit {
+  @for $i from 1 through $grid-columns {
+    .flx-#{$i} {
+      flex: 0 0 100% / $grid-columns * $i
+    }
+  }
+}
+
+// flex box 
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

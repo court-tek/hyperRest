@@ -1,0 +1,41 @@
+#TopImg {
+  height: 750px;
+  .flex {
+    @include flexRow;
+    .title {
+      padding: 200px 0;
+      h1 {
+        font-family: $breeTitles;
+        line-height: 1;
+        color: $blanco;
+        font-size: 4rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+      }
+      .book-table-btn {
+        font-family: $breeTitles;
+        color: $blanco;
+        text-align: center;
+        border: 1px solid $blanco;
+        padding: 13px 30px;
+        margin-top: 50px;
+        width: 160px;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+    }
+    .img-area {
+      color: $blanco; // temp style
+      margin: 200px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #TopImg {
+      .flex {
+      flex-direction: column;
+    }
+  }
+}
